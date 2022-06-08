@@ -8,7 +8,7 @@ function generateLampImagesHtml(){
 	for(let x=i, l=numImages; x<=l; x++){
 		h += `
 		<td>
-			<a href="orig/${getImageName(x)}.jpg" target="_blank"><img style="width:180px" src="${getImageName(x)}.jpg"></a>
+			<a href="orig/${getImageName(x)}.jpg" target="_blank"><img src="${getImageName(x)}.jpg"></a>
 		</td>`;
 		i++;
 	}
