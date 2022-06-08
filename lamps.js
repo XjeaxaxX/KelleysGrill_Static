@@ -24,6 +24,21 @@ function generateLampImagesHtml(){
 		i++;
 	}
 
+	for(let x=0, l=arrVideoLinks.length; x<l; x++){
+		h += `
+		<td>
+			<iframe
+			  width="560"
+			  height="315"
+			  src="${arrVideoLinks[x]}"
+			  frameborder="0"
+			  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+			  allowfullscreen>
+			</iframe>		
+		</td>
+		`;
+	}
+	
 	h = `
 	<tr>${h}
 	</tr>
