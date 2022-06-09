@@ -1,4 +1,23 @@
 
+function init(page){
+	
+	if(page === undefined || page != 'main'){
+		generateLampImagesHtml();
+	}
+	generateFooter();
+	
+}
+
+function generateFooter(){
+	let f = document.getElementById('footer');
+
+	f.innerHTML = `
+			Email Kelley.Peart@gmail.com to order.<br>
+			Lamps are individual pieces of art, and are sold on a first come,first served basis.<br>
+			There is NO shipping.<br>
+			Local deliveries only (upstate South Carolina).
+	`;
+}
 
 function generateLampImagesHtml(){
 	let t = document.getElementById('lampImages');
@@ -44,7 +63,8 @@ function generateLampImagesHtml(){
 	</tr>
 `;
 		
-	t.innerHTML =h;
+	t.innerHTML = h;
+	
 }
 
 
