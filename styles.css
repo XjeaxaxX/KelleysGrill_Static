@@ -10,7 +10,7 @@ body {
 	background-color: rgb(76, 175, 81);
 }
 #content {
-	margin: 50px;
+	margin: 50px 50px 300px 50px;
 }
 #contentWrapper {
 	overflow-y: auto;
