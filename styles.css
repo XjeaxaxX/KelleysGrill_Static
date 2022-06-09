@@ -26,6 +26,7 @@ body {
 	height: 10vh;
 	left: 0px;
 	font-size: 1.85rem;
+	overflow-y: auto;
 }
 #logo {
 	position: absolute;
